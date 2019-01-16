@@ -1,0 +1,98 @@
+    1  yum update
+    2  yum list | grep java 
+    3  Yum install java-1.8.0-openjdk.x86_64 -y
+    4  yum install java-1.8.0-openjdk-devel.x86_64. -y 
+    5  yum install java-1.8.0-openjdk-devel.x86_64 -y 
+    6  yum install java-1.8.0-openjdk.x86_64 -y
+    7  java --version 
+    8  java -version 
+    9  update alternative --config  java 
+   10  update alternatives --config  java 
+   11  update-alternative --config java
+   12  update-alternatives --config java
+   13  update-alternatives --config javac
+   14  yum install git -y
+   15  sudo wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo
+   16  sudo sed -i s/\$releasever/6/g /etc/yum.repos.d/epel-apache-maven.repo
+   17  sudo yum install -y apache-maven
+   18  mvn --version
+   19  mkdir /mydir
+   20  cd /mydir
+   21  git clone 
+   22  git clone  https://github.com/projectdevopsaws/myweb.git
+   23  ls
+   24  cd myweb/
+   25  ls
+   26  mvn clean install
+   27  ls 
+   28  cd target/
+   29  ls
+   30  yum install zip
+   31  cd ..
+   32  vi appspec.yml
+   33  vi pom.xml 
+   34  cd target/
+   35  mv myweb-0.11.0.war myweb.war
+   36  cd ..
+   37  ls
+   38  zip mydeploy.zip target/myweb.war appspec.yml 
+   39  ls
+   40  aws s3 cp mydeploy.zip s3://mydeploybucket/mydeploy.zip
+   41  aws s3 cp mydeploy.zip s3://mydeploybucket/mydeploy1.zip
+   42  aws s3 cp mydeploy.zip s3://mydeploybucket/
+   43  ls
+   44  cd /mydir/
+   45  ls
+   46  wget http://mirrors.estointernet.in/apache/tomcat/tomcat-8/v8.5.37/bin/apache-tomcat-8.5.37.tar.gz
+   47  tar -xvf apache-tomcat-8.5.37.tar.gz 
+   48  LS
+   49  LL
+   50  LL
+   51  XIT
+   52  EXIT
+   53  mv apache-tomcat-8.5.37 tomcat8
+   54  cd tomcat8/webapps/
+   55  ls
+   56  yum list | grep codedeploy
+   57  wget https://aws-codedeploy-us-west-1.s3.amazonaws.com/latest/install
+   58  cd /mydir/
+   59  cd /mydir/
+   60  wget https://aws-codedeploy-us-west-1.s3.amazonaws.com/latest/install
+   61  ls
+   62  install
+   63  chmod +x ./install
+   64  sudo ./install auto
+   65  service codedeploy-agent status
+   66  cd tomcat8/webapps/
+   67  ls
+   68  rm -rf install 
+   69  ls
+   70  ls
+   71  ls
+   72  ls
+   73  cd /
+   74  find -name "myweb.war"
+   75  cd ..
+   76  ls
+   77  cd /mydir/
+   78  cd tomcat8/
+   79  ls
+   80  cd ..
+   81  ls
+   82  cd myweb/
+   83  ls
+   84  vi appspec.yml 
+   85  history 
+   86  zip mydeploy.zip target/myweb.war appspec.yml 
+   87  aws s3 cp mydeploy.zip s3://mydeploybucket/
+   88  cd /mydir/tomcat8/
+   89  ls
+   90  rm -rf webapps§/
+   91  ls
+   92  ls
+   93  cd webapps/
+   94  ls
+   95  sh /mydir/tomcat8/bin/startup.sh
+   96  cd ..
+   97  cd ..
+   98  history > codedeployfile.txt
